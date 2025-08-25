@@ -147,3 +147,73 @@ a { color: inherit; text-decoration: none; }
   border-top: 1px solid rgba(255,255,255,0.08);
   background: rgba(17,24,39,0.6); backdrop-filter: blur(10px);
 }
+
+/* ===================== */
+/* RESPONSIVE AJUSTES 📱 */
+/* ===================== */
+
+/* Tablets y pantallas medianas */
+@media (max-width: 768px) {
+  .hero {
+    padding: 60px 12px 40px;
+  }
+
+  .hero h1 {
+    font-size: 28px;
+    line-height: 1.2;
+  }
+
+  .hero p {
+    font-size: 16px;
+  }
+
+  .hero-actions {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .btn {
+    width: 100%;
+    max-width: 300px;
+  }
+
+  .nav-links {
+    gap: 10px;
+  }
+}
+
+/* Celulares pequeños */
+@media (max-width: 480px) {
+  .hero {
+    padding: 50px 10px 30px;
+  }
+
+  .hero h1 {
+    font-size: 22px;
+  }
+
+  .hero p {
+    font-size: 14px;
+  }
+
+  .hero-actions {
+    flex-direction: column;
+    gap: 8px;
+  }
+
+  .btn {
+    width: 100%;
+    font-size: 14px;
+    padding: 8px 14px;
+  }
+
+  .nav-inner {
+    flex-direction: column;
+    gap: 8px;
+  }
+
+  .nav-links {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}
