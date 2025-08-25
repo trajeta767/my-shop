@@ -7,7 +7,14 @@ body {
   background: linear-gradient(180deg, #0f172a 0%, #111827 100%);
   color: #e5e7eb;
   overflow-x: hidden;
+
+  /* Fondo marca de agua (sirve en localhost y en GitHub Pages) */
+  background-image: url("./logo.png"); /* <-- ruta relativa dentro de src */
+  background-repeat: repeat;
+  background-size: 200px;
+  background-position: center;
 }
+
 a { color: inherit; text-decoration: none; }
 .container { max-width: 1200px; margin: 0 auto; padding: 0 16px; }
 
@@ -25,21 +32,11 @@ a { color: inherit; text-decoration: none; }
 .nav-links a { padding: 8px 12px; border-radius: 10px; opacity: .9; }
 .nav-links a:hover, .nav-links a.active { background: rgba(255,255,255,0.08); opacity: 1; }
 
-/* Hero */
+/* Hero (sin background para que se vea el del body) */
 .hero {
   padding: 80px 16px 56px;
   text-align: center;
   color: white;
-
-  /* Fondo con logo como marca de agua */
-  background-color: #0a0f1c;
- body {
-  background-image: url("/my-shop/fondo.png");
-}
- /* 👈 importante: sin / inicial */
-  background-repeat: repeat;
-  background-size: 200px;
-  background-position: center;
 }
 
 .hero h1 {

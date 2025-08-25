@@ -1,15 +1,16 @@
 // src/components/Navbar.jsx
 import React from "react";
 import { Link } from "react-router-dom";
+import logo from "../logo.png"; // 👈 importa el logo desde src
 
 const Navbar = () => {
   return (
     <header className="nav">
       <div className="nav-container">
         <Link to="/" className="brand">
-          {/* OJO: el logo está en public/logo.png */}
+          {/* Logo ahora viene de src/logo.png */}
           <img
-            src={`${import.meta.env.BASE_URL}logo.png`}
+            src={logo}
             alt="AS Clothing"
           />
           <span>AS Clothing</span>
