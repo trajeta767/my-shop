@@ -29,22 +29,65 @@ a { color: inherit; text-decoration: none; }
 .hero {
   padding: 80px 16px 56px;
   text-align: center;
-  background: radial-gradient(1000px 400px at 50% -10%, rgba(59,130,246,.25), transparent 60%);
+  color: white;
+
+  /* Fondo con logo como marca de agua */
+  background-color: #0a0f1c;
+  background-image: url("logo.png"); /* 👈 importante: sin / inicial */
+  background-repeat: repeat;
+  background-size: 200px;
+  background-position: center;
 }
-.hero-content { max-width: 900px; margin: 0 auto; }
-.hero h1 { margin: 0 0 10px; font-size: 40px; line-height: 1.1; }
-.hero p { margin: 0 0 24px; opacity: .9; }
+
+.hero h1 {
+  margin: 0 0 10px;
+  font-size: 40px;
+  line-height: 1.1;
+  color: #f5c542;
+}
+
+.hero p {
+  margin: 0 0 24px;
+  opacity: .9;
+  font-size: 18px;
+  color: #ccc;
+}
+
+.hero-actions {
+  display: flex;
+  gap: 12px;
+  justify-content: center;
+}
 
 /* Botones */
 .btn {
-  display: inline-block; padding: 10px 16px; border-radius: 12px; border: 1px solid rgba(255,255,255,0.15);
-  background: rgba(255,255,255,0.06); color: #fff; cursor: pointer; transition: transform .15s ease, background .15s ease;
+  display: inline-block;
+  padding: 10px 16px;
+  border-radius: 12px;
+  border: 1px solid rgba(255,255,255,0.15);
+  background: rgba(255,255,255,0.06);
+  color: #fff;
+  cursor: pointer;
+  transition: transform .15s ease, background .15s ease;
 }
 .btn:hover { transform: translateY(-1px); background: rgba(255,255,255,0.12); }
-.btn-primary { background: #2563eb; border-color: #2563eb; }
-.btn-primary:hover { background: #1d4ed8; }
-.btn-outline { background: transparent; border-color: rgba(255,255,255,0.35); }
-.hero-actions { display: flex; gap: 12px; justify-content: center; }
+
+.btn-primary {
+  background: #f5c542;
+  color: black;
+  font-weight: bold;
+}
+.btn-primary:hover { background: #d4a931; }
+
+.btn-outline {
+  background: transparent;
+  border: 1px solid #f5c542;
+  color: #f5c542;
+  font-weight: bold;
+}
+.btn-outline:hover {
+  background: rgba(245,197,66,0.1);
+}
 
 /* Productos */
 .productos-section { max-width: 1200px; margin: 32px auto; padding: 0 16px; }

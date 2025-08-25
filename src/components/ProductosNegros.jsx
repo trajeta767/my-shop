@@ -5,11 +5,13 @@ import { useCart } from "./CartContext";
 const BASE = import.meta.env.BASE_URL;
 
 const productosNegros = [
-  { id: 6, nombre: "Camisa Negra",    precio: "$22", img: `${BASE}camisanegra.png` },
-  { id: 7, nombre: "Camiseta Negra",  precio: "$26", img: `${BASE}camisetanegra.png` },
-  { id: 8, nombre: "Pantalón Negro",  precio: "$32", img: `${BASE}pantalonnegro.png` },
-  { id: 9, nombre: "Chaqueta Negra",  precio: "$42", img: `${BASE}busonegro.png` },
-  { id: 10, nombre: "Sudadera Negra", precio: "$37", img: `${BASE}gorranegra.png` },
+  { id: 8, nombre: "Camisa Negra",    precio: "$44.000", img: `${BASE}camisanegra.png` },
+  { id: 9, nombre: "Camiseta Negra",  precio: "$28.000", img: `${BASE}camisetanegra.png` },
+  { id: 10, nombre: "Pantalón Sudadera",  precio: "$52.000", img: `${BASE}pantalonnegro.png` },
+  { id: 11, nombre: "Pantalón Sudadera Importado",  precio: "$72.0000", img: `${BASE}pantalonnegro.png` },
+  { id: 12, nombre: "Buso Negro",  precio: "$65.000", img: `${BASE}busonegro.png` },
+  { id: 13, nombre: "Buso Negro Importado",  precio: "$82.000", img: `${BASE}busonegro.png` },
+  { id: 14, nombre: "Gorra Negra", precio: "$32.000", img: `${BASE}gorranegra.png` },
 ];
 
 function ProductosNegros() {

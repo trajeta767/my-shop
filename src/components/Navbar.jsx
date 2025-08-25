@@ -8,7 +8,10 @@ const Navbar = () => {
       <div className="nav-container">
         <Link to="/" className="brand">
           {/* OJO: el logo está en public/logo.png */}
-          <img src="/logo.png" alt="AS Clothing" />
+          <img
+            src={`${import.meta.env.BASE_URL}logo.png`}
+            alt="AS Clothing"
+          />
           <span>AS Clothing</span>
         </Link>
 

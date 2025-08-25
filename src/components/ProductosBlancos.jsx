@@ -4,11 +4,13 @@ import { useCart } from "./CartContext";
 const BASE = import.meta.env.BASE_URL;
 
 const productos = [
-  { id: 1, nombre: "Camisa Blanca", precio: "$20", img: `${BASE}camisa.png` },
-  { id: 2, nombre: "Camisa Negra", precio: "$25", img: `${BASE}camiseta.png` },
-  { id: 3, nombre: "Pantalón Jeans", precio: "$30", img: `${BASE}pantalon.png` },
-  { id: 4, nombre: "Chaqueta", precio: "$40", img: `${BASE}buso.png` },
-  { id: 5, nombre: "Sudadera", precio: "$35", img: `${BASE}gorra.png` },
+  { id: 1, nombre: "Camisa Blanca", precio: "$40.000", img: `${BASE}camisa.png` },
+  { id: 2, nombre: "Camiseta Blanca", precio: "$27.000", img: `${BASE}camiseta.png` },
+  { id: 3, nombre: "Pantalón Sudadera", precio: "$52.0000", img: `${BASE}pantalon.png` },
+  { id: 4, nombre: "Pantalón Sudadera Importado", precio: "$72.000", img: `${BASE}pantalon.png` },
+  { id: 5, nombre: "Buso", precio: "$65.000", img: `${BASE}buso.png` },
+  { id: 6, nombre: "Buso Importado", precio: "$82.000", img: `${BASE}buso.png` },
+  { id: 7, nombre: "Gorra", precio: "$32.000", img: `${BASE}gorra.png` },
 ];
 
 function Productos() {
