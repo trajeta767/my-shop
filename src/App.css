@@ -33,7 +33,10 @@ a { color: inherit; text-decoration: none; }
 
   /* Fondo con logo como marca de agua */
   background-color: #0a0f1c;
-  background-image: url("logo.png"); /* 👈 importante: sin / inicial */
+ body {
+  background-image: url("/my-shop/fondo.png");
+}
+ /* 👈 importante: sin / inicial */
   background-repeat: repeat;
   background-size: 200px;
   background-position: center;
